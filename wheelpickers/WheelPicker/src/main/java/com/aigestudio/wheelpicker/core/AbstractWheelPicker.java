@@ -106,6 +106,13 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
         assignment();
         computeWheelSizes();
     }
+	
+	public void initData(AttributeSet attrs) {
+        obtainAttrs(attrs);
+        instantiation();
+        assignment();
+        computeWheelSizes();
+    }
 
     protected void obtainAttrs(AttributeSet attrs) {
         int defDataID = R.array.WheelArrayDefault;
@@ -176,7 +183,7 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
         }
     }
 
-    public void assignment() {
+    protected void assignment() {
         curData = "";
     }
 
