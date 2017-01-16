@@ -108,7 +108,6 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
     }
 	
 	public void initData() {
-        instantiation();
         assignment();
         computeWheelSizes();
     }
